@@ -24,9 +24,10 @@
 		// "noLib": true,                                    /* Disable including any library files, including the default lib.d.ts. */
 		// "useDefineForClassFields": true,                  /* Emit ECMAScript-standard-compliant class fields. */
 		// "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
-        "jsx": "react",
-        "jsxFactory": "Html.createElement",
-        "jsxFragmentFactory": "Html.Fragment",
+        "jsx": "react-jsx",
+		"jsxImportSource": "@kitajs/html",
+        // "jsxFactory": "Html.createElement",
+        // "jsxFragmentFactory": "Html.Fragment",
 
 		/* Modules */
 		"module": "ES2022" /* Specify what module code is generated. */,
@@ -37,7 +38,9 @@
 		// "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
 		// "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
 		"types": [
-			"bun-types"
+			"bun-types",
+			"@kitajs/html/htmx.d.ts",	// NOTE: optional
+			"@kitajs/html/alpine.d.ts"	// NOTE: optional
 		] /* Specify type package names to be included without being referenced in a source file. */,
 		// "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
 		// "moduleSuffixes": [],                             /* List of file name suffixes to search when resolving a module. */

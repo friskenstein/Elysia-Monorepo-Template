@@ -1,4 +1,4 @@
-import { api } from "@backend/index"
+import { api } from '@backend/api'
 
 api.listen(3000)
 
