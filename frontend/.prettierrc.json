@@ -1,0 +1,9 @@
+{
+	"useTabs": true,
+	"singleQuote": true,
+	"semi": false,
+	"arrowParens": "avoid",
+	"htmlWhitespaceSensitivity": "ignore",
+	"trailingComma": "es5",
+	"printWidth": 100
+}

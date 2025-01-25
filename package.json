@@ -1,0 +1,11 @@
+{
+  "name": "elysia-monorepo-template",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "^1.2.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
