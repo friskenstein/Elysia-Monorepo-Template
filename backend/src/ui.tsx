@@ -4,7 +4,7 @@ import { html, Html } from '@elysiajs/html'
 // string unnecessary?
 type Children = { children: JSX.Element | JSX.Element[] | string }
 
-const HTMLtemplate = ({ children }: Children) => (
+const HTMLtemplate = ({ children, color }: Children & { color?: string }) => (
 	<html lang="en">
 		<head>
 			<title>Elysia</title>
@@ -12,14 +12,14 @@ const HTMLtemplate = ({ children }: Children) => (
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 		</head>
-		<body class="bg-zinc-900 text-white flex justify-center items-center flex-col h-screen">{children}</body>
+		<body class={`${color} text-white flex justify-center items-center flex-col h-screen`}>{children}</body>
 	</html>
 )
 
 const Icon = ({icon}: {icon?: string}) => <>{icon === 'fox'? '🦊' : '🌑'}</>
 
 const Hello = () => (
-	<HTMLtemplate>
+	<HTMLtemplate color="bg-zinc-900">
 		<h1 class={'text-5xl leading-loose text-zinc-300'}>Hello, World</h1>
 		<p class={'text-3xl text-zinc-500'}>
 			This is <span class={'text-amber-500'}>Elysia</span> <Icon icon={'fox'} /><Icon />
