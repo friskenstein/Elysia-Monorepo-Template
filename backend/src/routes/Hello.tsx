@@ -15,8 +15,7 @@ export const Hello = () => (
 		<p style={{ backgroundColor: 'red' }}>with JSX</p>
 		<input type="text" class={'text-3xl text-zinc-500 border rounded-xl p-2'} />
 		<p class={'text-3xl'} safe>
-			{' '}
-			user says: {userInput}{' '}
+			user says: {userInput}
 		</p>
 
 		<div class={['class-a class-b', true && 'class-c']}>Conditional classes</div>
