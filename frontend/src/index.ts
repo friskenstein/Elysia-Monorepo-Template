@@ -1,8 +1,8 @@
 import { treaty } from '@elysiajs/eden'
-import type { Api } from '@backend'
+import type { Api } from '@backend/api'
 
-const api = treaty<Api>('localhost:3000')
+const server = treaty<Api>('localhost:3000')
 
-const { data } = await api.api.plugin.get()
+const { data } = await server.api.hello.get()
 
 console.log(data)
