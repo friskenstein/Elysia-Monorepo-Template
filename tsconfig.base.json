@@ -10,7 +10,9 @@
     	"@backend": ["./backend/src"],
     	"@backend/*": ["./backend/src/*"],
     	"@frontend": ["./frontend/src"],
-    	"@frontend/*": ["./frontend/src/*"]
+    	"@frontend/*": ["./frontend/src/*"],
+		"$lib": ["./fullstack/src/lib"],
+		"$lib/*": ["./fullstack/src/lib/*"]
     }
   }
 }

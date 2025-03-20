@@ -1,5 +1,11 @@
 # Elysia Monorepo Template
 
+With all the flavors:
 
-Still need to figure out a way to get the automatic end-to-end safety on the
-SvelteKit fullstack side (without just importing the types).
+- JSX server rendered pages
+- Framework-agnostic JavaScript client
+    - SPA
+    - JS-based mobile app (React Native, Lynx, Capacitor)
+- Fullstack SvelteKit
+
+All with full end-to-end type safety.

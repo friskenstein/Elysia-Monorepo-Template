@@ -1,9 +1,10 @@
-import { api } from '@backend/index'
+import { api } from '@backend/api'
+import type { RequestHandler } from '@sveltejs/kit'
 
-type RequestHandler = (v: { request: Request }) => Response | Promise<Response>
+const handler: RequestHandler = async (event) => await api.handle(event.request)
 
-export const GET: RequestHandler = ({ request }) => api.handle(request)
-export const POST: RequestHandler = ({ request }) => api.handle(request)
-// export const PUT: RequestHandler = ({ request }) => api.handle(request)
-// export const PATCH: RequestHandler = ({ request }) => api.handle(request)
-// export const DELETE: RequestHandler = ({ request }) => api.handle(request)
+export const GET = handler
+export const POST = handler
+export const PUT = handler
+export const PATCH = handler
+export const DELETE = handler

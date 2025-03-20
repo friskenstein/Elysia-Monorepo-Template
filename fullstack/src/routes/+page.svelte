@@ -4,4 +4,4 @@
 	let { data }: PageProps = $props()
 </script>
 
-<h1 class="text-3xl font-bold underline">{data.message.hello}</h1>
+<pre class="text-3xl font-bold">{JSON.stringify(data,null,4)}</pre>
